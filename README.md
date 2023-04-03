@@ -1,1 +1,1 @@
-# Tip-Calculator
+A tip calculator project from Frontend Mentor, created with HTML, CSS and JavaScript. The calculator takes in the users bill, tip percentage amount and the number of people to split the bill with. Then it returns the total amount per person and the tip amount per person.
