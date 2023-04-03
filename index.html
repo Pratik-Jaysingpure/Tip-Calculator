@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h2 class="title">SPLI<br />TTER</h2>
+      <div class="tip-container">
+        <div class="input-col">
+          <div class="input input-bill">
+            <label for="bill" class="input-heading">Bill</label>
+            <p class="input-error hidden" id="billError">
+              Please enter a valid number
+            </p>
+            <span class="icon-input currency-input">
+              <input
+                class="input-box"
+                type="number"
+                id="bill"
+                name="bill"
+                placeholder="0"
+                required
+                min="0"
+                max="10000000"
+            /></span>
+          </div>
+          <div class="input input-tip">
+            <div class="input-heading">Select Tip %</div>
+            <div class="set-tip-grid">
+              <input
+                class="radio-input"
+                name="tipAmount"
+                type="radio"
+                value="5"
+                id="rad5"
+              /><label class="radio radio-tip" for="rad5">5%</label>
+              <input
+                class="radio-input"
+                name="tipAmount"
+                type="radio"
+                value="10"
+                id="rad10"
+              /><label class="radio radio-tip" for="rad10">10%</label>
+              <input
+                class="radio-input"
+                name="tipAmount"
+                type="radio"
+                value="15"
+                id="rad15"
+              /><label class="radio radio-tip" for="rad15">15%</label>
+              <input
+                class="radio-input"
+                name="tipAmount"
+                type="radio"
+                value="25"
+                id="rad25"
+              /><label class="radio radio-tip" for="rad25">25%</label>
+              <input
+                class="radio-input"
+                name="tipAmount"
+                type="radio"
+                value="50"
+                id="rad50"
+              /><label class="radio radio-tip" for="rad50">50%</label>
+              <input
+                class="radio radio-cust"
+                name="tipAmountCust"
+                type="number"
+                id="tipSetCustom"
+                maxlength="4"
+                value=""
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+          <div class="input num-people">
+            <label for="numPeople" class="input-heading"
+              >Number of People</label
+            >
+            <p class="input-error hidden" id="numPeopleError">
+              Please enter a valid number
+            </p>
+            <span class="icon-input people-input">
+              <input
+                class="input-box"
+                type="number"
+                id="numPeople"
+                name="numofpeople"
+                placeholder="0"
+                required
+                min="0"
+                max="10000000"
+            /></span>
+          </div>
+        </div>
+        <div class="output-col">
+          <div class="output">
+            <div class="output-con">
+              <div class="output-head-con">
+                <div class="output-heading">Tip Amount</div>
+                <div class="output-subheading">/ person</div>
+              </div>
+              <div class="output-display">
+                <div class="output-display-text" id="output-tip">£0.00</div>
+              </div>
+            </div>
+            <div class="output-con">
+              <div class="output-head-con">
+                <div class="output-heading">Total</div>
+                <div class="output-subheading">/ person</div>
+              </div>
+              <div class="output-display">
+                <div class="output-display-text" id="output-total">£0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-reset" id="reset">Reset</div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9c18c858f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
